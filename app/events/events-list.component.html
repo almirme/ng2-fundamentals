@@ -2,5 +2,6 @@
     <h1>Upcomming Angular 2 Events</h1>
     <hr>
     <event-thumbnail #thumbnailRef [event]="eventLondon"></event-thumbnail>
+    <h2>{{thumbnailRef.someProperty}}</h2>
     <button class="btn btn-primary" (click)="thumbnailRef.logFoo()">Click me</button>
 </div>
