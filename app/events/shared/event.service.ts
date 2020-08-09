@@ -5,6 +5,11 @@ export class EventService {
     getEvents() {
         return EVENTS;
     }
+
+    getEvent(id: number) {
+        let index = EVENTS.findIndex(event => event.id === id);
+        return EVENTS[index];
+    }
 }
 
 const EVENTS = [
