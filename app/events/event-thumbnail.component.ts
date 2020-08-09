@@ -22,4 +22,12 @@ export class EventThumbnailComponent {
             return [];
         }
     }
+
+    getStartTimeStyle(): any {
+        if (this.event && this.event.time === '18:00 am') {
+            return { color: '#F0880F', 'font-weight': 'bold' };
+        } else {
+            return {};
+        }
+    }
 }
