@@ -1,5 +1,5 @@
 <div>
     <h1>Upcomming Angular 2 Events</h1>
     <hr>
-    <event-thumbnail [event]="eventLondon"></event-thumbnail>
+    <event-thumbnail *ngFor="let singleEvent of events" [event]="singleEvent"></event-thumbnail>
 </div>
